@@ -8,7 +8,7 @@ const Messages = {
   CLIENT_MISSING_INTENTS: 'Valid intents must be provided for the Client.',
 
   TOKEN_INVALID: 'An invalid token was provided.',
-  TOKEN_MISSING: 'Request to use token, but token was unavailable to the client.',
+  TOKEN_MISSING: 'Request to use token, but token was unavailable to the Client.',
 
   WS_CLOSE_REQUESTED: 'WebSocket closed due to user request.',
   WS_CONNECTION_EXISTS: 'There is already an existing WebSocket connection.',
@@ -28,7 +28,7 @@ const Messages = {
   SHARDING_WORKER_EXISTS: id => `Shard ${id} already has an active worker.`,
   SHARDING_READY_TIMEOUT: id => `Shard ${id}'s Client took too long to become ready.`,
   SHARDING_READY_DISCONNECTED: id => `Shard ${id}'s Client disconnected before becoming ready.`,
-  SHARDING_READY_DIED: id => `Shard ${id}'s process exited before its Client became ready.`,
+  SHARDING_READY_DIED: id => `Shard ${id}'s process exited before it's Client became ready.`,
   SHARDING_NO_CHILD_EXISTS: id => `Shard ${id} has no active process or worker.`,
   SHARDING_SHARD_MISCALCULATION: (shard, guild, count) =>
     `Calculated invalid shard ${shard} for guild ${guild} with ${count} shards.`,
